@@ -1,7 +1,5 @@
 {
   "dependencies": {
-    "express": "^4",
-    "jade": "^1",
     "underscore": "^1.8.3"
   }
 }

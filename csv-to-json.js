@@ -1,15 +1,5 @@
-var express = require('express');
 var fs = require('fs');
 var _ = require('underscore');
-
-var app = express();
-app.set('view engine', 'jade');
-app.set('views', __dirname + '/views');
-
-app.get('/', function(req, res) {
-    res.render('index');
-});
-
 
 // set the command line inputs to variables so they are accessible
 var inputFileName = process.argv[2];
@@ -52,12 +42,8 @@ var csvToJson = function(){
 
 };
 
-console.log(csvToJson());
+csvToJson();
 
-
-var server = app.listen(7911, function() {
-    console.log('Express server listening on port ' + server.address().port);
-});
 
 
 
